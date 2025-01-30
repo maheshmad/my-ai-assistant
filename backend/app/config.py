@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     DOCS_DIR: str = 'data/docs'
     EXPORT_DIR: str = 'data'
     VECTOR_SEARCH_TOP_K: int = 10
+    OWNER_NAME:str=''
 
     model_config = SettingsConfigDict(env_file='.env')
 
